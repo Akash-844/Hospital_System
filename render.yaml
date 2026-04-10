@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: hospital-system
+    env: java
+    buildCommand: mvn clean package
+    startCommand: mvn tomcat7:run -Dmaven.tomcat.port=$PORT
